@@ -24,18 +24,15 @@
         <h1 id="title">Crystals Collector!</h1>
       </div>
 
-  <div id="rules-area">
-    <h4>You will be given a random number at the start of the game.</h4>
-    <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
-      score.</h4>
-    <h4>You win the game by matching your total score to random number, you lose the game if your total score goes
-      above the random number.</h4>
-    <h4>The value of each crystal is hidden from you until you click on it.</h4>
-    <h4>Each time when the game starts, the game will change the values of each crystal</h4>
+  <div class="responsive" id="rules-area">
+    <h3>Directions:</h3>
+    <h4>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+      score. You win the game by matching your total score to random number, you lose the game if your total score goes
+      above the random number. The value of each crystal is hidden from you until you click on it. Each time when the game starts, the game will change the values of each crystal.</h4>
   </div>
 
       <!-- Crystals -->
-      <div id="crystal-area">
+      <div class="responsive" id="crystal-area">
           <div id="crystal-group">
               <img id="diamond" class="crystal" src="https://pluspng.com/img-png/diamond-hd-png-diamond-png-image-1233.png">
               <img id="emerald" class="crystal" src="https://www.seekpng.com/png/full/26-263679_emerald-stone-png-images-emerald-transparent-background.png">
@@ -44,12 +41,14 @@
           </div>
         </div>
 
-  <div id="screen">
+  <div class="responsive" id="screen">
     <!-- Random Number Display -->
-    <div id="random-area"></div>
+    <div id="random-area">
+      Random Number:
+      <h3 id="random-number"></h3>
+    </div>
     <div id="score">
-        <h3>Your total score is:</h3>
-    <!-- Score Display -->
+        Your total score is:
         <div id="score-area"></div>
     </div>
     <!-- Wins/Losses Display -->

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
 
         function initial() {
-                $("#random-area").html(ComputerPick);
+                $("#random-number").html(ComputerPick);
                 var diamond = $("<img>");
                 diamond.attr("id", "diamond");
                 diamond.attr("src", "assetts/images/blue.png");
@@ -53,7 +53,7 @@ $(document).ready(function () {
                 var topaz = Math.floor(Math.random() * 4) + 9;
                 var ruby = Math.floor(Math.random() * 6) + 2;
                 userscore = 0;
-                $("#random-area").html(ComputerPick);
+                $("#random-number").html(ComputerPick);
                 $("winlose-message").html("");
                 $("#wins").html("Wins:  " + wins);
                 $("#losses").html("Losses  " + losses);
@@ -68,16 +68,16 @@ $(document).ready(function () {
 
                 if (userscore === ComputerPick) {
                         wins++;
-                        $("#winlose-message").html("You are a winner!");
+                        $("#winlose-message").html("You win! Congrats!!");                                
                         $("#wins").html("Wins:  " + wins);
-                        $("#losses").html("Losses  " + losses);
+                        $("#losses").html("Losses:  " + losses);
                         resetGame();
                 }
                 else if (userscore > ComputerPick) {
                         losses++;
-                        $("#winlose-message").html("You are a loser!")
+                        $("#winlose-message").html("You lose! Try Again!")
                         $("#wins").html("Wins:  " + wins);
-                        $("#losses").html("Losses  " + losses);
+                        $("#losses").html("Losses:  " + losses);
                         resetGame();
                 }
  
