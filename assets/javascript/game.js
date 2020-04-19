@@ -16,7 +16,6 @@ console.log("1st ruby: "+ruby);
 
 
 
-
 //assigned all four crsytal variables to random numbers
 //set total user score variable to 0 
 //set your wins and losses variable to 0

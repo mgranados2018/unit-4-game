@@ -16,9 +16,14 @@
 
 <body>
 
-  <h1 id="title">CrystalsCollector!</h1>
+
 
 <section>
+
+    <div class="container">
+        <h1 id="title">Crystals Collector!</h1>
+      </div>
+
   <div id="rules-area">
     <h4>You will be given a random number at the start of the game.</h4>
     <h4>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
@@ -29,31 +34,32 @@
     <h4>Each time when the game starts, the game will change the values of each crystal</h4>
   </div>
 
+      <!-- Crystals -->
+      <div id="crystal-area">
+          <div id="crystal-group">
+              <img id="diamond" class="crystal" src="https://pluspng.com/img-png/diamond-hd-png-diamond-png-image-1233.png">
+              <img id="emerald" class="crystal" src="https://www.seekpng.com/png/full/26-263679_emerald-stone-png-images-emerald-transparent-background.png">
+              <img id="topaz" class="crystal" src="https://i.ya-webdesign.com/images/transparent-stones-topaz-6.png">
+              <img id="ruby" class="crystal" src="https://www.pngmart.com/files/7/Ruby-Transparent-PNG.png">
+          </div>
+        </div>
+
   <div id="screen">
     <!-- Random Number Display -->
     <div id="random-area"></div>
+    <div id="score">
+        <h3>Your total score is:</h3>
+    <!-- Score Display -->
+        <div id="score-area"></div>
+    </div>
     <!-- Wins/Losses Display -->
     <div id="win-area">
-      <p id="winlose-message"></p>
-      <p id="wins"></p>
-      <p id="losses"></p>
+        <p id="winlose-message"></p>
+        <p id="wins"></p>
+        <p id="losses"></p>
     </div>
   </div>
 
-  <div>
-    <!-- Crystals -->
-    <div id="crystal-area">
-
-      <img id="diamond" class="crystal" src="assets/images/blue.png">
-      <img id="emerald" class="crystal" src="assets/images/green.png">
-      <img id="topaz" class="crystal" src="assets/images/yellow.png">
-      <img id="ruby" class="crystal" src="assets/images/red.png">
-
-    </div>
-    <div id="score-title">Your total score is:</div>
-    <!-- Score Display -->
-    <div id="score-area"></div>
-  </div>
 </section>
 </body>
 
